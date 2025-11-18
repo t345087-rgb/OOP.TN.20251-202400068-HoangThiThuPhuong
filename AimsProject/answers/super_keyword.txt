@@ -1,0 +1,4 @@
+Trong Java, từ khóa super được dùng để gọi đến các thành phần của lớp cha
+Ví dụ: trong lớp Book, lệnh:
+super(title, category, cost), được dùng để gọi constructor của lớp cha Disc, nhằm khởi tạo các thuộc tính chung như title, category, cost
+Nhờ vậy lớp Book không phải lặp lại mã nguồn và đảm bảo tính kế thừa đúng chuẩn
