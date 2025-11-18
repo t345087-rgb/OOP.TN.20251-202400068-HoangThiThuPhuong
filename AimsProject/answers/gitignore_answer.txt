@@ -1,0 +1,11 @@
+*, Những đường dẫn như: bin/,.settings/, .classpath, .project đều là file sinh ra tự động không phải mã nguồn thật sự
+
+*, Nếu không thêm vào .gitignore, Git sẽ theo dõi và commit cả những file: luôn thay đổi sau mỗi lần build, nặng, dư thừa, làm repo bị rác và khó quản lý
+*, Nếu sử dụng IntelliJ IDEA hoặc VSCode thì nên thêm những đường dẫn nào vào .gitignore?
+    +, Với IntelliJ IDEA:.idea/, *.iml, out/, ...
+    +, Với VSCode:.vscode/, ...
+*, Nếu đã lỡ commit các file tạm lên Git, nhưng sau đó bạn đã thêm chúng vào .gitignore và muốn Git ngừng theo dõi chúng mà không xoá khỏi máy, bạn làm thế nào?
+Dùng lệnh:
+git rm --cached -r .
+git add .
+git commit -m "Remove ignored files from tracking"
