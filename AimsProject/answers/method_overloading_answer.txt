@@ -1,0 +1,3 @@
+Khi thêm phương thức addDVD(DigitalVideoDisc... discs), xảy ra lỗi biên dịch hoặc cảnh báo
+Nguyên nhân: varargs (DigitalVideoDisc...) thực chất được biên dịch thành một mảng (DigitalVideoDisc[]) => Gây lỗi trùng phương thức
+Cách giải quyết: Xóa phương thức addDVD(DigitalVideoDisc[] discs) và giữ lại phiên bản varargs addDVD(DigitalVideoDisc... discs) vì nó bao quát được mọi trường hợp
